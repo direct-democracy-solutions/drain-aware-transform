@@ -34,8 +34,8 @@ export abstract class DrainAwareTransform extends stream.Transform {
   }
 
   /** Push and resolve when it is safe to push again */
-  protected safePush(chunk: any): Promise<void> {
-    if (this.push(chunk)) {
+  protected safePush(chunk: any, encoding?: BufferEncoding): Promise<void> {
+    if (this.push(chunk, encoding)) {
       return Promise.resolve();
     } else {
       return new Promise((resolve) => {
