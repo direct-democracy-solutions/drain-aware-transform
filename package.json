@@ -1,6 +1,6 @@
 {
   "name": "drain-aware-transform",
-  "version": "1.0.0-dev",
+  "version": "1.0.0",
   "description": "Simple wrapper to allow backpressure-aware Transform streams",
   "keywords": [
     "stream",
