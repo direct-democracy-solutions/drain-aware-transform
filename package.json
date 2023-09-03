@@ -1,0 +1,47 @@
+{
+  "name": "drain-aware-transform",
+  "version": "1.0.0-dev",
+  "description": "Simple wrapper to allow backpressure-aware Transform streams",
+  "keywords": [
+    "stream",
+    "transform",
+    "backpressure",
+    "etl"
+  ],
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint \"src/**/*.ts\" --fix",
+    "lint:ci": "eslint \"src/**/*.ts\"",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/direct-democracy-solutions/drain-aware-transform.git"
+  },
+  "author": "Dolan Murvihill",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/direct-democracy-solutions/drain-aware-transform/issues"
+  },
+  "homepage": "https://github.com/direct-democracy-solutions/drain-aware-transform#readme",
+  "devDependencies": {
+    "@fast-check/jest": "^1.7.0",
+    "@types/jest": "^29.5.2",
+    "@types/node": "^20.4.1",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "fast-check": "^3.11.0",
+    "jest": "^29.6.1",
+    "null-writable": "^1.0.5",
+    "prettier": "^2.3.2",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.1.6"
+  }
+}
