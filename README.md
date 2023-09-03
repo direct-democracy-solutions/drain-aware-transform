@@ -14,9 +14,15 @@ returns false, the transform waits until its buffer is drained and
 the _read() private method is called again. Then 'continue' is
 emitted and the transform can continue pushing data.
 
-A convenience class 'safePush' is also provided. 'safePush' pushes
+A convenience method 'safePush' is also provided. 'safePush' pushes
 data and then returns a Promise that resolves when it is safe to push
 again.
+
+```
+abstract class DrainAwareTransform extends stream.Transform {
+  protected safePush(chunk: any, encoding?: BufferEncoding): Promise<void>;
+}
+```
 
 ## Getting Started
 
