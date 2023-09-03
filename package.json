@@ -1,6 +1,6 @@
 {
   "name": "drain-aware-transform",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple wrapper to allow backpressure-aware Transform streams",
   "keywords": [
     "stream",
@@ -9,6 +9,7 @@
     "etl"
   ],
   "main": "lib/index.js",
+  "files": ["lib/**"],
   "scripts": {
     "build": "tsc --build",
     "format": "prettier --write \"src/**/*.ts\"",
